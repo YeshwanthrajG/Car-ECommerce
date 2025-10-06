@@ -1,0 +1,46 @@
+CarWeb/
+.settings/
+build/classes/CarExpert/
+    BuyServlet.class
+    CartServlet.class
+    DBConnection.class
+    FAQServlet.class
+    LoginServlet.class
+    LogoutServlet.class
+    PaymentServlet.class
+    RegisterServlet.class
+    SellServlet.class
+    UsernameCheckServlet.class
+src/main
+    java/CarExpert/
+        BuyServlet.java
+        CartServlet.java
+        DBConnection.java
+        FAQServlet.java
+        LoginServlet.java
+        LogoutServlet.java
+        PaymentServlet.java
+        RegisterServlet.java
+        SellServlet.java
+        UsernameCheckServlet.java
+    webapp/
+        images/
+        META-INF/
+        WEB-INF/
+        checkout.jsp
+        dashboard.jsp
+        db.jsp
+        faqs.jsp
+        index.jsp
+        login.jsp
+        loginProcess.jsp
+        logout.jsp
+        register.jsp
+        sell.jsp
+        style.css
+.classpath
+.gitignore
+.project
+LICENSE
+project-structure.txt
+README.md
