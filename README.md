@@ -5,7 +5,7 @@ Car E-Commerce is a full stack web application using JSP, Servlets, ajax along w
 ## Table of Contents
 
 - [Features](#features)  
-- [Technologies Used](#technologies-used)  
+- [Languages and Tools Used](#languages-and-tools-used)  
 - [Prerequisites](#prerequisites)  
 - [Running the Application](#running-the-application)  
 - [Project Structure](#project-structure)  
@@ -25,7 +25,7 @@ Car E-Commerce is a full stack web application using JSP, Servlets, ajax along w
 - 📦 **Image Upload / Media Handling** - Supports uploading car images as URL. 
 - 📱 **Responsive UI** - Implements AJAX in register page for faster validations with database and provides FAQs using XML  
 
-## Technologies Used
+## Languages and Tools Used
 
 1. HTML, CSS and JS
 2. JSPs
@@ -62,7 +62,7 @@ Before you begin, make sure you have the following installed:
 4. **Add Tomcat Server at localhost-config with the project**
 
 5. **Run the project**
-    [right-click] -> [Run_As] -> [Run_on_Server]
+    [right-click]Right Click -> [Run_As]Run As -> [Run_on_Server]Run On Server
 
 ## Project Structure
 
