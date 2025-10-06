@@ -1,0 +1,38 @@
+<faqs>
+  <faq>
+    <question>What is CarExpert?</question>
+    <answer>CarExpert is an online platform for buying and selling cars, built using Java servlets and MySQL for secure user and transaction management.</answer>
+  </faq>
+  <faq>
+    <question>How do I register a new account?</question>
+    <answer>Go to the Register page and fill in your username, password, and email. Your data is stored securely in the database after validation.</answer>
+  </faq>
+  <faq>
+    <question>How do I log in to CarExpert?</question>
+    <answer>Visit the Login page and enter your registered username and password. Successful authentication creates a session to keep you logged in.</answer>
+  </faq>
+  <faq>
+    <question>How can I list my car for sale?</question>
+    <answer>Log in to your account, then navigate to the Sell page. Enter car details and submit; your listing appears on CarExpert for buyers.</answer>
+  </faq>
+  <faq>
+    <question>How do I add cars to my cart?</question>
+    <answer>Browse available cars and click “Buy” to add them to your cart session. Your selections persist until checkout or logout.</answer>
+  </faq>
+  <faq>
+    <question>How is my payment processed?</question>
+    <answer>During checkout, your payment is handled via the Payment page, which updates your cart and car availability after successful processing.</answer>
+  </faq>
+  <faq>
+    <question>How do I remove a car from my cart?</question>
+    <answer>You can remove cars by clicking the “Remove” button in your cart; the CartServlet updates your cart accordingly.</answer>
+  </faq>
+  <faq>
+    <question>How do I log out?</question>
+    <answer>Click the Logout button in the navigation bar. Your session will end and you’ll be redirected to the homepage.</answer>
+  </faq>
+  <faq>
+    <question>What security measures are in place?</question>
+    <answer>All user authentication, account management, and transaction processes use secure servlets and database operations to protect your data.</answer>
+  </faq>
+</faqs>
