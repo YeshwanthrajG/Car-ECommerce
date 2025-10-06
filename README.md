@@ -62,7 +62,7 @@ Before you begin, make sure you have the following installed:
 4. **Add Tomcat Server at localhost-config with the project**
 
 5. **Run the project**
-    [right-click]Right Click -> [Run_As]Run As -> [Run_on_Server]Run On Server
+   Right Click -> Run As -> Run On Server
 
 ## Project Structure
 
