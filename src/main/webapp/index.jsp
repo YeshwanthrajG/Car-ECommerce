@@ -19,7 +19,7 @@
         <div class="navbar">
 		    <div class="brand">CarExpert</div>
 		    <div class="actions">
-		        <a class="ghost" href="login.jsp">Login</a>
+		        <a class="ghost" href="http://localhost/CarECommercePHP/loginPHP.php">Login</a>
 		        <a class="primary" href="register.jsp">Register</a>
 		    </div>
 		</div>
@@ -29,7 +29,7 @@
 		        <h2>Buy and Sell Cars Easily</h2>
 		        <p>Explore listings, add cars to cart, and checkout securely.</p>
 		        <div>
-		            <a class="primary round-button" href="login.jsp">Go to Dashboard</a>
+		            <a class="primary round-button" href="http://localhost/CarECommercePHP/loginPHP.php">Go to Dashboard</a>
 		        </div>
 		    </div>
 		</div>    
