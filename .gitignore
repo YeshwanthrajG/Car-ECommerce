@@ -8,3 +8,7 @@
 
 #build path
 .classpath
+
+/CarECommercePHP/.settings
+/CarECommercePHP/.project
+/CarECommercePHP/.buildpath
