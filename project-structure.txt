@@ -11,6 +11,11 @@ build/classes/CarExpert/
     RegisterServlet.class
     SellServlet.class
     UsernameCheckServlet.class
+CarECommercePHP/
+    .settings/
+    .buildpath
+    .project
+    loginPHP.php
 src/main
     java/CarExpert/
         BuyServlet.java
