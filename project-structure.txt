@@ -16,6 +16,28 @@ CarECommercePHP/
     .buildpath
     .project
     loginPHP.php
+output/
+    ajax1.png
+    ajax2.png
+    cars.png
+    checkout.png
+    faq1.png
+    faq2.png
+    faq3.png
+    homepage1.png
+    homepage2.png
+    homepage3.png
+    homepage4.png
+    homepage5.png
+    inventory1.png
+    inventory2.png
+    login.png
+    mysql.png
+    php.png
+    register.png
+    sell.png
+    users.png
+    xampp.png
 src/main
     java/CarExpert/
         BuyServlet.java
