@@ -38,7 +38,7 @@
 ![MYSQL](<output/mysql.png>)
 
 ## Sample - cars table
-![CARS](<output.cars.png>)
+![CARS](<output/cars.png>)
 
 ## Sample - users table
 ![USERS](<output/users.png>)
