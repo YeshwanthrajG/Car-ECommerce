@@ -1,0 +1,303 @@
+<?php
+session_start();
+
+// Initialize error flag
+$error = false;
+
+// Handle form submission
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    // Dummy credentials (replace with database check in production)
+    $validUsername = 'admin';
+    $validPassword = 'password123';
+    
+    $username = $_POST['username'] ?? '';
+    $password = $_POST['password'] ?? '';
+    
+    // Simple validation
+    if ($username === $validUsername && $password === $validPassword) {
+        $_SESSION['username'] = $username;
+        
+        // Redirect to dashboard.jsp
+        header("Location: http://localhost:7011/CarWeb/dashboard.jsp");
+        exit();
+    } else {
+        $error = true; // Set flag to trigger alert
+    }
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login | CarExpert</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Show alert if login failed
+        window.addEventListener('DOMContentLoaded', function () {
+            <?php if ($error): ?>
+            alert('Invalid username or password!');
+            <?php endif; ?>
+        });
+    </script>
+</head>
+<body>
+<div class="navbar">
+    <div class="brand">CarExpert</div>
+    <div class="actions">
+        <a class="ghost" href="http://localhost:7011/CarWeb/index.jsp">Home</a>
+        <a class="primary" href="http://localhost:7011/CarWeb/register.jsp">Register</a>
+    </div>
+</div>
+
+<div class="container-login">
+    <div class="card">
+        <h2>Login</h2>
+        <form class="form" method="post" action="">
+            <label>Username</label>
+            <input type="text" name="username" required>
+            <label>Password</label>
+            <input type="password" name="password" required>
+            <button type="submit" class="primary">Login</button>
+        </form>
+    </div>
+</div>
+</body>
+<style>
+.homepage{
+    background-color: #1b6be4;
+}
+
+.title-card {
+  font-size: 30px;
+  padding-top: 20px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 5px #d60b0b, 0 0 10px #115ec4, 0 0 15px #e60073, 0 0 20px #cf8017, 0 0 25px #1acf14, 0 0 30px #0e5dc5, 0 0 35px #e60073;
+  }
+  to {
+    text-shadow: 0 0 10px #ca1414, 0 0 15px #06e636, 0 0 20px #0ebdd4, 0 0 25px #390db3, 0 0 30px #9607a3, 0 0 35px #941c0d, 0 0 40px #ffffff;
+  }
+}
+
+.title-moto{
+    color: rgb(255, 255, 255);
+    padding-top: 0px;
+    padding-bottom: 40px;
+}
+
+.button-box {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.buy-button{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: bold;
+    font-size: 20px;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.round-button{
+    border-radius: 16px;
+    background-color: skyblue;
+}
+
+.sclass{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: white;
+    display: block;
+    align-items: center;
+}
+
+.car-show{
+    padding-left: 22px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    display: inline;
+}
+
+.aclass{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: black;
+    display: block;
+    align-items: center;
+    color: white;
+}
+
+.bclass{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    align-items: center;
+}
+
+.cclass{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: black;
+    display: block;
+    align-items: center;
+    color: white;
+}
+
+.dclass{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    align-items: center;
+}
+
+.trust{
+    display: block;
+    padding: 20px;
+    background-color: white;
+    align-items: center;
+}
+
+
+.go-to-sell-button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.go-to-sell-button:hover {
+    background-color: #218838;
+}
+
+.login-box {
+    width: 300px;
+    margin: 100px auto;
+    background-color: white;
+    padding: 30px;
+    padding-right: 50px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px #aaa;
+}
+.login-box h2 {
+    text-align: center;
+    color: #1b6be4;
+}
+.form-group {
+    margin-top: 20px;
+}
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.btn {
+    width: 109%;
+    padding: 12px;
+    background-color: #1b6be4;
+    border: none;
+    color: white;
+    margin-top: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.error {
+    color: red;
+    text-align: center;
+}
+
+.register-box {
+    width: 300px;
+    margin: 100px auto;
+    background-color: white;
+    padding: 30px;
+    padding-right: 50px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px #aaa;
+    text-align: center;
+}
+.register-box h2 {
+    text-align: center;
+    color: #1b6be4;
+    padding-left: 50px;
+}
+
+.message {
+    text-align: center;
+    color: red;
+}
+.success {
+    color: green;
+}
+
+* { box-sizing: border-box; }
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  margin: 0; color: #2c3e50;
+}
+a { text-decoration: none; }
+
+.container {
+  max-width: 960px; margin: 32px auto; padding: 0 16px;
+}
+
+.container-login {
+  max-width: 400px; margin: 32px auto; padding: 30px;
+}
+
+.navbar {
+  background: #ffffffaa; backdrop-filter: blur(6px);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 16px; box-shadow: 0 4px 18px rgba(0,0,0,.08);
+}
+.navbar .brand { font-weight: 700; }
+.navbar .actions a, .navbar .actions form button {
+  margin-left: 8px;
+}
+
+.card {
+  background: #fff; border-radius: 16px; padding: 20px; margin: 16px 0;
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+.table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 12px; overflow: hidden; }
+.table th, .table td { padding: 12px 14px; border-bottom: 1px solid #ecf0f1; }
+.table th { background: #f6f9fc; text-align: left; }
+.total-row td { background: #fef8e7; }
+
+button, .btn, .primary, .ghost {
+  display: inline-block; border: none; cursor: pointer; padding: 10px 16px; border-radius: 10px;
+  transition: transform .05s ease, box-shadow .2s ease;
+}
+.primary { background: #2563eb; color: #fff; }
+.primary:hover { box-shadow: 0 8px 18px rgba(37,99,235,.35); transform: translateY(-1px); }
+.ghost { background: transparent; color: #2563eb; border: 1px solid #2563eb; }
+.ghost:hover { background: #2563eb; color: #fff; }
+
+.form { display: flex; flex-direction: column; gap: 10px; }
+.form input, .form select {
+  padding: 10px 12px; border: 1px solid #dce1e6; border-radius: 10px; font-size: 14px;
+}
+.row { display: flex; gap: 12px; }
+.col { flex: 1; }
+
+.round-button { border-radius: 24px; padding: 12px 18px; }
+.badge { background:#ecfdf5; color:#047857; padding:4px 10px; border-radius:999px; font-size:12px; }
+</style>
+</html>
